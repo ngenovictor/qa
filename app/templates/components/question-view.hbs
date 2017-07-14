@@ -1,11 +1,22 @@
 <div class="container row">
 	{{#each model as |question|}}
-		<div class="col-xs-6">
-			<h3>{{question.title}}</h3>by {{question.author}}
-			<div>
-				<p>{{question.query}}</p>
-				<button class="btn btn-default">{{#link-to 'question' question.id}}Open{{/link-to}}</button>
+		<div class="index-question row">
+			<div class="col-sm-3">
+				<img src="http://images.clipartpanda.com/person-thinking-with-question-mark-question_mark_person.jpg">
 			</div>
-		</div>	
+			<div class="col-sm-5">
+				<div class="question-content">
+					<h3>{{question.title}}</h3>by {{question.author}}				
+					<p>{{question.query}}</p>
+					<p>{{question.answers.length}} answers</p>
+				</div>
+
+				<div class="question-links">
+					<div class="col-xs-3 btn btn-default">{{#link-to 'question' question.id}}Open{{/link-to}}</div>
+					<div class="col-xs-5"><i class="glyphicon glyphicon-calendar"></i> {{question.date_created}}</div>
+
+				</div>
+			</div>	
+		</div>
 	{{/each}}
 </div>

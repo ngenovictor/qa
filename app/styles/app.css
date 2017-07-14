@@ -4,3 +4,18 @@
 .question{
 	background-color: #ffcccc;
 }
+img{
+	width: 100%;
+}
+.index-question{
+	background-color: rgba(110,110,110,0.3);
+	border:1px solid rgba(110,110,110,0.3);
+	height:100%;
+}
+.index-question div.question-content{
+	height: 180px;
+	/*height:80%;*/
+}
+.index-question div.question-links{
+	background-color: red;
+}
