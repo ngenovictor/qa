@@ -1,8 +1,13 @@
 import Ember from 'ember';
 
+var questions = [
+	{"title":"stuff"}
+]
+
 export default Ember.Route.extend({
 	model(){
 		return this.store.findAll('question');
+		// return questions;
 	},
 	actions:{
 		createQuestion(params){

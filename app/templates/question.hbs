@@ -1,0 +1,5 @@
+<h3>{{model.title}}</h3>
+<p><em>Created by <strong>{{model.author}}</strong> on {{model.date_created}}</em></p>
+<h5>{{model.query}}</h5>
+{{update-question question=model update='editQuestion'}}
+{{answer-tile question=model createAnswer2='createAnswerRecord'}}

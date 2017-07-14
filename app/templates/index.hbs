@@ -1,12 +1,10 @@
 This is the home page
-{{create-question createQ='createQuestion'}}
+<div>
+	{{create-question createQ='createQuestion'}}
+</div>
+<div>
+	{{question-view model=model editQuestion='editQuestion'}}
+</div>
 
 
-{{#each model as |question|}}
-	<div>
-		<h3>Title:{{question.title}}</h3>
-		<div>
-			{{question.content}}
-		</div>
-	</div>	
-{{/each}}
+

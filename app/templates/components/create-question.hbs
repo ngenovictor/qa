@@ -6,8 +6,16 @@
 				{{input value=title id="title"}}
 			</div>
 			<div>
-				<label for="content">Question</label>
-				{{input value=content id="content"}}
+				<label for="author">Author</label>
+				{{input value=author id="author"}}
+			</div>
+			<div>
+				<label for="query">Query</label>
+				{{input value=query id="query"}}
+			</div>
+			<div>
+				<label for="notes">Notes</label>
+				{{input value=notes id="notes"}}
 			</div>
 			<button{{action 'submit'}}>Submit</button>
 			<button{{action 'cancel'}}>Cancel</button>

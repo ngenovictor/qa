@@ -1,0 +1,17 @@
+{{#if isCreateAnswerFormVisible}}
+	<div>
+		<form>
+			<div>
+				<label for="answer_content">Answer</label>
+				{{input value=answer_content id="answer_content"}}
+			</div>
+			<div>
+				<label for="author">Author</label>
+				{{input value=author id="author"}}
+			</div>
+			<button {{action 'submit'}}>Submit</button>
+		</form>
+	</div>
+{{else}}
+	<button {{action 'answer'}}>Give Answer</button>
+{{/if}}
