@@ -1,0 +1,19 @@
+{{#if isCreateFormShow}}
+	<div>
+		<form>
+			<div class="form-group">	
+				<label for="title">Title</label>
+				{{input value=title id="title"}}
+			</div>
+			<div>
+				<label for="content">Question</label>
+				{{input value=content id="content"}}
+			</div>
+			<button{{action 'submit'}}>Submit</button>
+			<button{{action 'cancel'}}>Cancel</button>
+		</form>
+
+	</div>
+{{else}}
+	<button{{action 'createQFormShow'}}>Create Question</button>
+{{/if}}
